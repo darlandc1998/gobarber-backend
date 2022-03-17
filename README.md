@@ -9,7 +9,7 @@ For development, you will only need Node.js and a node global package, Yarn, ins
 ## Steps to get started
 
 1 - Create an ```.env ``` file based on ```.env.example``` and fill in its variables.
-2 - Create a ```ormconfig.json``` file based on ```ormconfig.json.example``` and fill in its variables.
+2 - Create a ```ormconfig.json``` file based on ```ormconfig.example.json``` and fill in its variables.
 
 ## Install all dependencies
 
