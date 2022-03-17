@@ -30,7 +30,7 @@ yarn dev:server
 Production mode requires that the path and extensions present in the ```ormconfig.json``` file be changed from ```./src``` to ```./dist``` and ```.ts``` to ```.js```, respectively.
 
 ```bash
-yarn dev:server
+yarn build
 ```
 
 ## License
