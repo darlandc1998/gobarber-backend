@@ -5,6 +5,8 @@ import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 
+import { instanceToInstance } from 'class-transformer';
+
 interface IRequest {
   provider_id: string;
   day: number;
@@ -44,7 +46,7 @@ class ListProviderAppointmentsService {
         },
       );
 
-      await this.cacheProvider.save(cacheKey, appointments);
+      await this.cacheProvider.save(cacheKey, instanceToInstance(appointments));
     }
 
     return appointments;
